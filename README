@@ -1,1 +1,5 @@
 python manage.py createsuperuser --email=nico@example.com
+
+coverage run --source='.' manage.py test
+
+coverage html

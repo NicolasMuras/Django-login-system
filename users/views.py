@@ -81,7 +81,7 @@ class Login(ObtainAuthToken, Utils):
                         'token': token.key,
                         'user': user_serializer.data,
                         'message': 'Successful login.',
-                        }, status = status.HTTP_201_CREATED)
+                        }, status = status.HTTP_200_OK)
                 else:
                     self.delete_sessions(user)
                     token.delete()
@@ -90,7 +90,7 @@ class Login(ObtainAuthToken, Utils):
                         'token': token.key,
                         'user': user_serializer.data,
                         'message': 'Successful login.',
-                        }, status = status.HTTP_201_CREATED)
+                        }, status = status.HTTP_200_OK)
             else:
                 return Response({'error':'[!] This user is banned.'}, status = status.HTTP_401_UNAUTHORIZED)
         else:

@@ -63,6 +63,9 @@ class Quota(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     max_resources = models.IntegerField(null=True, blank=True)
 
+    def get_max_resources(self):
+        return self.max_resources
+
 
 @receiver(post_save, sender=User)
 def create_quota(sender, instance, created, **kwargs):
