@@ -108,7 +108,7 @@ I also have added the Postman collection file in the repository.
 <strong>JWT Token system:</strong>
 <br>
 <br>
-Is easy to implement and help us to manage sessions and access to views. I have experience writing systems like this and recently I have write some similar for a Golang + Gin project.
+Is easy to implement and help us to manage sessions and access to views. I have experience writing systems like this and recently I have written some similar for a Golang + Gin project.
 <br>
 <br>
 <strong>File structure:</strong>
