@@ -114,7 +114,7 @@ Is easy to implement and help us to manage sessions and access to views. I have 
 <strong>File structure:</strong>
 <br>
 <br>
-Because the proyect is small and we don't have a lot of 'apps' in our project I decided to have one folder per application. The inner structure of each app folder allow me to manage multiple viewsets and serializers files, depends of the complexity of the object, some times we need to add extra viewsets and serializers in the app. The test folder can replicate the app folder structure but in this case I leave it simple.
+Because the proyect is small and we don't have a lot of 'apps' in our project I decided to have one folder per application. The inner structure of each app folder allow me to manage multiple viewsets and serializers files, depends of the complexity of the object, some times we need to add extra viewsets and serializers in the app. The test folder can replicate the app folder structure but in this case I have kept it simple.
 <br>
 <br>
 <strong>Serializers without validations:</strong>
@@ -138,7 +138,7 @@ I implemented end-to-end tests for the views, I like to use one TestSetUp class 
 <strong>Relations between models:</strong>
 <br>
 <br>
-I choose to make a relation between Resource and User objects, each Resource have an owner. This way is easy to iterate through the Resources to get what we want. Another choice was to use a signal to create the Quota model each time a user is created.
+I choose to make a relation between Resource and User objects, each Resource have an owner field, this makes the relation between Resource and User, this way is easy to iterate through the Resources to get what we want. Another choice was to use a signal to create the Quota model each time a user is created.
 <br>
 <br>
 <strong>Technology stack:</strong>
