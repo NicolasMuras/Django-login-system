@@ -57,7 +57,10 @@ Run the app:
 Allows you to create an Admin user yo can access to /admin and you will have higher permissions.
 <br>
 <br>
-<pre><code>python manage.py createsuperuser --email=nico@example.com
+<pre><code>docker ps
+docker exec -it 32c743258eaa sh
+python manage.py createsuperuser --email=nico@example.com
+exit
 </code></pre>
 
 <em>
@@ -72,11 +75,24 @@ Allows you to create an Admin user yo can access to /admin and you will have hig
 I implemented coverage for testing, you can run the tests with the following commands.
 <br>
 <br>
-<pre><code>
+<pre><code>docker ps
+docker exec -it 32c743258eaa sh
 coverage run --source='.' manage.py test
-
-coverage html
+coverage report
 </code></pre>
 <em>
     Tip: You must be inside the docker shell to run this.
 </em>
+
+<br>
+<br>
+<strong>Endpoints information:</strong>
+<br>
+<br>
+You can have a better information about the endpoints with:
+<br>
+<br>
+
+### `http://127.0.0.1:8000/swagger/`
+### `http://127.0.0.1:8000/redoc/`
+
