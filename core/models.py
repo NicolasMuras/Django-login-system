@@ -2,7 +2,9 @@ from django.db import models
 
 
 class BaseModel(models.Model):
-
+    """
+        Abstract class to use with simple history, this help us to track the state of the file.
+    """
     id = models.AutoField(primary_key=True)
     state = models.BooleanField('State', default=True)
     created_date = models.DateField('Creation Date', auto_now=False, auto_now_add=True)

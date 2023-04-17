@@ -2,7 +2,6 @@ from django.test import TestCase
 from users.models import User
 
 
-
 class TestModels(TestCase):
 
     def setUp(self):

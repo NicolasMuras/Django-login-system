@@ -96,3 +96,6 @@ You can have a better information about the endpoints with:
 ### `http://127.0.0.1:8000/swagger/`
 ### `http://127.0.0.1:8000/redoc/`
 
+<br>
+I also have added the Postman collection file in the repository.
+<br>

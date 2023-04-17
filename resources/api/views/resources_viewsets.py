@@ -1,10 +1,10 @@
-from resources.api.serializers.resources_serializers import ResourceSerializer
-from resources.models import Resource
-from users.authentication_mixins import Authentication
 from rest_framework import status
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
+from resources.api.serializers.resources_serializers import ResourceSerializer
+from resources.models import Resource
+from users.authentication_mixins import Authentication
 
 
 class ResourceViewSet(Authentication, viewsets.ModelViewSet):

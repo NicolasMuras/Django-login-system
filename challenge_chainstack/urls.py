@@ -29,9 +29,9 @@ from users.views import Login, Logout, UserToken, Register
 
 schema_view = get_schema_view(
    openapi.Info(
-      title="Snippets API",
+      title="Resources API",
       default_version='v1',
-      description="Test description",
+      description="Login/Logout management system with JWT tokens and Quota management system.",
       terms_of_service="https://www.google.com/policies/terms/",
       contact=openapi.Contact(email="contact@snippets.local"),
       license=openapi.License(name="BSD License"),

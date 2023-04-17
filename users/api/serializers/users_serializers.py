@@ -1,5 +1,4 @@
 from rest_framework import serializers
-
 from users.models import User
 
 
@@ -51,7 +50,7 @@ class RegisterUserSerializer(serializers.ModelSerializer):
         )
 
     def validate(self, attrs):
-
+        # Validate if email is in use.
         email = attrs.get('email', '')
         if User.objects.filter(email=email).exists():
             raise serializers.ValidationError(

@@ -4,7 +4,6 @@ from users.views import Register, Login, Logout, UserToken
 from users.models import User
 
 
-
 class TestAuthorizationViews(TestCase):
 
     def test_user_register(self):
