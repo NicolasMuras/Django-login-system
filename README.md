@@ -55,7 +55,7 @@ Run the app:
 <strong>Create admin user:</strong>
 <br>
 <br>
-Allows you to create an Admin user yo can access to /admin and you will have higher permissions.
+Allows you to create an Admin user. You can access to /admin and you will have higher permissions.
 <br>
 <br>
 <pre><code>docker ps
@@ -65,7 +65,7 @@ exit
 </code></pre>
 
 <em>
-  Tip: You have to follow the instructions.
+  Tip: Follow the instructions.
 </em>
 
 <br>
@@ -73,7 +73,7 @@ exit
 <strong>Testing:</strong>
 <br>
 <br>
-I implemented coverage for testing, you can run the tests with the following commands.
+I implemented coverage for testing, you can run the tests with the following commands. 87% covered.
 <br>
 <br>
 <pre><code>docker ps
@@ -114,7 +114,7 @@ Is easy to implement and help us to manage sessions and access to views. I have 
 <strong>File structure:</strong>
 <br>
 <br>
-Because the proyect is small and we don't have a lot of 'apps' in our project I decided to have one folder per application. The inner structure of each app folder allow me to manage multiple viewsets and serializers files, depends of the complexity of the object, some times we need to add extra viewsets and serializers in the app. The test folder can replicate the app folder structure but in this case I have kept it simple.
+Because the proyect is small and we don't have a lot of 'apps' in our project I decided to have one folder per application. The inner structure of each app folder allow me to manage multiple viewsets and serializers files, depends of the complexity of the object, some times we need to add extra viewsets and serializers in the app. The test folder structure can replicate the app folder structure but in this case I have kept it simple.
 <br>
 <br>
 <strong>Serializers without validations:</strong>
